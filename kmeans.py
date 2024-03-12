@@ -3,7 +3,8 @@ from sklearn import metrics
 import numpy as np
 import cv2
 from utils import closest_rgb, find_picture_colors
-
+from warnings import filterwarnings
+filterwarnings('ignore') # disable ConvergenceWarningc
 COLOR_DETECT = [                                                                                                                    
     [(0, 0, 0),              "Black"],
     [(127, 127, 127),        "Gray"],
